@@ -1,0 +1,2014 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0046)https://dbtagriculture.bihar.gov.in/RegFarmer/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link href="./kisan registion setep_files/Site.css" rel="stylesheet" type="text/css"><link href="./kisan registion setep_files/Menu.css" rel="Stylesheet" type="text/css"><link href="./kisan registion setep_files/TableCSSCode.css" rel="stylesheet" type="text/css"><link rel="stylesheet" type="text/css" href="./kisan registion setep_files/bootstrapNew.min.css">
+    <script type="text/javascript" src="./kisan registion setep_files/bootstrap.min.js.download"></script>
+    
+    <script type="text/jscript">
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            setInterval(function () {
+                minutes = parseInt(timer / 60, 10)
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                }
+            }, 1000);
+        }
+
+        window.onload = function () {
+            var fiveMinutes = 60 * 15,
+                display = document.querySelector('#time');
+            startTimer(fiveMinutes, display);
+        };
+
+    </script>
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button2 {
+            background-color: #008CBA;
+        }
+        /* Blue */
+        .button3 {
+            background-color: #f44336;
+        }
+        /* Red */
+        .button4 {
+            background-color: #4CAF50;
+            color: black;
+        }
+        /* Gray */
+        .button5 {
+            background-color: #555555;
+        }
+        /* Black */
+    </style>
+    <style type="text/css">
+        .modalBackground {
+            background-color: Black;
+            filter: alpha(opacity=90);
+            opacity: 0.8;
+        }
+
+        .modalPopup {
+            background-color: #FFFFFF;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 300px;
+            height: 140px;
+        }
+    </style>
+    <style type="text/css">
+        .modalBackground {
+            background-color: Yellow;
+            filter: alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .modalPopup {
+            background-color: #ffffdd;
+            border-width: 3px;
+            border-style: solid;
+            border-color: Gray;
+            padding: 5px;
+            width: 350px;
+            height: 300px;
+        }
+
+        .modalBackground1 {
+            background-color: Black;
+            filter: alpha(opacity=90);
+            opacity: 0.8;
+            /*background-color: Black;
+        filter: alpha(opacity=60);
+        opacity: 0.6;*/
+        }
+
+        .modalPopup1 {
+            background-color: #FFFFFF;
+            width: 100%;
+            border: 3px solid #0DA9D0;
+            border-radius: 12px;
+            padding: 0;
+        }
+
+            .modalPopup1 .header {
+                background-color: #2FBDF1;
+                height: 50px;
+                color: White;
+                line-height: 50px;
+                text-align: center;
+                font-weight: bold;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+            }
+
+            .modalPopup1 .body {
+                min-height: 50px;
+                line-height: 30px;
+                text-align: center;
+                font-weight: bold;
+            }
+
+            .modalPopup1 .footer {
+                padding: 6px;
+            }
+
+            .modalPopup1 .yes, .modalPopup .no {
+                height: 23px;
+                color: White;
+                line-height: 50px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                border-radius: 4px;
+            }
+
+            .modalPopup1 .yes {
+                background-color: #2FBDF1;
+                border: 1px solid #0DA9D0;
+            }
+
+            .modalPopup1 .no {
+                background-color: #9F9F9F;
+                border: 1px solid #5C5C5C;
+            }
+
+        .auto-style1 {
+            background-color: #00FF99;
+        }
+    </style>
+
+    <script language="JavaScript" type="text/javascript">
+        var fadebgcolor = "white"
+        var fadearray = new Array() //array to cache fadeshow instances
+        var fadeclear = new Array() //array to cache corresponding clearinterval pointers
+
+        var dom = (document.getElementById) //modern dom browsers
+        var iebrowser = document.all
+    </script>
+     <script type="text/javascript" src="./kisan registion setep_files/FusionCharts.js.download"></script>
+      
+    <script src="./kisan registion setep_files/SlideShow.js.download" type="text/javascript"></script>
+    <script type="text/javascript src=" https:="" ajax.googleapis.com="" ajax="" libs="" jquery="" 3.3.1="" jquery.min.js"=""></script>
+     <script type="text/javascript" src="./kisan registion setep_files/jquery-1.12.4.js.download"></script>
+    <title>
+	Agriculture Department
+</title>
+    
+ 
+    <script type="text/javascript" src="./kisan registion setep_files/coin-slider.js.download"></script>
+    <link rel="stylesheet" href="./kisan registion setep_files/coin-slider-styles.css" type="text/css">
+
+
+
+    <script type="text/javascript">
+
+
+        function UncheckOthers(objchkbox) {
+            //Get the parent control of checkbox which is the checkbox list
+            var objchkList = objchkbox.parentNode.parentNode.parentNode;
+            //Get the checkbox controls in checkboxlist
+            var chkboxControls = objchkList.getElementsByTagName("input");
+            //Loop through each check box controls
+            for (var i = 0; i < chkboxControls.length; i++) {
+                //Check the current checkbox is not the one user selected
+                if (chkboxControls[i] != objchkbox && objchkbox.checked) {
+                    //Uncheck all other checkboxes
+                    chkboxControls[i].checked = false;
+                }
+            }
+        }
+    </script>
+    <script language="javascript" type="text/javascript">
+        function ValidateAlpha(evt) {
+            var keyCode = (evt.which) ? evt.which : evt.keyCode
+            //        if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123))
+            //            return false;
+            //        return true;
+            if (keyCode > 32 && (keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 122)) {
+                return false;
+            }
+            return true;
+        }
+
+        function noSpace(obj) {
+            obj.value = obj.value.replace(/\s/g, "");
+        }
+        function letterwithspace(evt) {
+            evt = (evt) ? evt : event;
+            var charcode = (evt.charCode) ? evt.charCode : ((evt.keyCode) ? evt.keyCode : ((evt.which) ? evt.which : 0));
+            if (charcode > 32 && (charcode < 65 || charcode > 90) && (charcode < 97 || charcode > 122)) {
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <script type="text/javascript">
+        function validate(evt) {
+
+            var charCode = (evt.which) ? evt.which : evt.keyCode;
+            if (charCode > 31
+            && (charCode < 48 || charCode > 57))
+                return false;
+
+            return true;
+        }
+    </script>
+    <script type="text/ecmascript">
+        function CalculateAge(DOB) {
+            if (DOB.value != '') {
+                now = new Date()
+                dob = DOB.value.split('/');
+                if (dob.length === 3) {
+                    born = new Date(dob[2], dob[1] * 1 - 1, dob[0]);
+                    age = Math.floor((now.getTime() - born.getTime()) / (365.25 * 24 * 60 * 60 * 1000));
+                    if (isNaN(age)) {
+                        document.getElementById('lblAge').innerHTML = '';
+                        alert('Input date is incorrect!');
+                    }
+                    else {
+                        document.getElementById('lblAge').innerHTML = age;
+                    }
+                }
+            }
+        }
+
+    </script>
+    <script language="javascript" type="text/javascript">
+        function checkdate(sender, args) {
+            if (sender._selectedDate > new Date()) {
+                alert("You cannot select a day earlier that today !");
+                sender._selectedDate = new Date();
+                sender._textbox.set_Value(sender._selectedDate.format(sender._format))
+            }
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        //Message to display whenever right click on website
+        var message = "Sorry, Right Click have been disabled.";
+        function click(e) {
+            if (document.all) {
+                if (event.button == 2 || event.button == 3) {
+                    //                alert(message);
+                    alert("Sorry, right click is not allowed !!");
+                    return false;
+                }
+            }
+            else {
+                if (e.button == 2 || e.button == 3) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    // alert(message);
+                    alert("Sorry, right click is not allowed !!");
+                    return false;
+                }
+            }
+        }
+        if (document.all) {
+            document.onmousedown = click;
+        }
+        else {
+            document.onclick = click;
+        }
+
+
+        document.oncontextmenu = function () {
+            return false;
+
+        };
+    </script>
+    <style type="text/css">
+        .gridcontainer {
+            position: relative;
+            top: 10px;
+            padding: 0 0 0 0;
+            display: block;
+            background: none;
+            font-family: Arial,Verdana;
+        }
+    </style>
+    <style type="text/css">
+        .smallSize {
+            font-size: small;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+
+        .autocomplete_completionListElement {
+            margin: 0px!important;
+            background-color: inherit;
+            color: windowtext;
+            border: buttonshadow;
+            border-width: 1px;
+            border-style: solid;
+            cursor: default;
+            overflow: auto;
+            height: 400px;
+            font-family: Tahoma;
+            font-size: small;
+            text-align: left;
+            list-style-type: none;
+        }
+        /* AutoComplete highlighted item */
+        .autocomplete_highlightedListItem {
+            background-color: #ffff99;
+            color: black;
+            padding: 1px;
+        }
+
+        /* AutoComplete item */
+        .autocomplete_listItem {
+            background-color: window;
+            color: windowtext;
+            padding: 1px;
+        }
+
+        .Background {
+            background-color: Black;
+            filter: alpha(opacity=90);
+            opacity: 0.8;
+        }
+
+        .Popup {
+            background-color: #FFFFFF;
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-left: 10px;
+            width: 400px;
+            height: 350px;
+        }
+    </style>
+    <style type="text/css">
+        /*body
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}*/
+        .modal {
+            display: none;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: black;
+            z-index: 100;
+            opacity: 0.8;
+            filter: alpha(opacity=60);
+            -moz-opacity: 0.8;
+            min-height: 100%;
+        }
+
+        #divImage {
+            display: none;
+            z-index: 1000;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: White;
+            height: 550px;
+            width: 600px;
+            padding: 3px;
+            border: solid 1px black;
+        }
+    </style>
+
+    <script type="text/javascript">
+<!--
+    function scrollTextBox() {
+        var textRange = document.getElementById('txtifsccode').createTextRange();
+        textRange.collapse(false);
+        textRange.select();
+    }
+    // -->
+    </script>
+
+    <script type="text/javascript">
+        function SetTarget() {
+            document.forms[0].target = "_blank";
+        }
+    </script>
+    <style type="text/css">
+        .ui-datepicker {
+            font-size: 8pt !important;
+        }
+
+        .style1 {
+            width: 161px;
+        }
+
+        .style3 {
+            width: 162px;
+        }
+
+        .style4 {
+            width: 162px;
+            height: 36px;
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+        }
+
+        .auto-style1 {
+            height: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+
+        var finalUrl = "";
+        var MethodInfo = "";
+        var MethodCapture = "";
+
+              //Mantra Discover Function
+          function discoverAvdmFirstNode(PortNo) {
+             // alert(PortNo);
+              //var primaryUrl = "http://127.0.0.1:";
+
+              var primaryUrl = "http://127.0.0.1:";
+
+              try {
+                  var protocol = window.location.href;
+                  if (protocol.indexOf("https") >= 0) {
+                      primaryUrl = "https://127.0.0.1:";
+                  }
+              } catch (e)
+              { }
+              url = "";
+              var verb = "RDSERVICE";
+              var err = "";
+              var res;
+              $.support.cors = true;
+              var httpStaus = false;
+              var jsonstr = "";
+              var data = new Object();
+              var obj = new Object();
+
+              //alert(primaryUrl);
+
+              $.ajax({
+                  type: "RDSERVICE",
+                  async: false,
+                  crossDomain: true,
+                  url: primaryUrl + PortNo,
+                  contentType: "text/xml; charset=utf-8",
+                  processData: false,
+                  cache: false,
+                  async: false,
+                  crossDomain: true,
+                  success: function (data) {
+                      httpStaus = true;
+                      res = { httpStaus: httpStaus, data: data };
+                      finalUrl = primaryUrl + PortNo.toString();
+                      //alert(data);
+                      //debugger;
+                      var $doc = $.parseXML(data);
+
+                      //alert($($doc).find('Interface').eq(1).attr('path'));
+
+
+                      if ($($doc).find('Interface').eq(0).attr('path') == "/rd/capture") {
+                          MethodCapture = $($doc).find('Interface').eq(0).attr('path');
+                      }
+                      if ($($doc).find('Interface').eq(1).attr('path') == "/rd/capture") {
+                          MethodCapture = $($doc).find('Interface').eq(1).attr('path');
+                      }
+
+                      if ($($doc).find('Interface').eq(0).attr('path') == "/rd/info") {
+                          MethodInfo = $($doc).find('Interface').eq(0).attr('path');
+                      }
+                      if ($($doc).find('Interface').eq(1).attr('path') == "/rd/info") {
+                          MethodInfo = $($doc).find('Interface').eq(1).attr('path');
+                      }
+                    //  alert("RDSERVICE 1 Discover Successfully");
+
+                      //alert(finalUrl + MethodCapture);
+                  },
+                  error: function (jqXHR, ajaxOptions, thrownError) {
+
+                      //alert(thrownError);
+                      res = { httpStaus: httpStaus, err: getHttpError(jqXHR) };
+                  },
+              });
+
+              return res;
+          }
+
+          function discoverAvdm() {
+
+
+
+              var DrpVal = document.getElementById('MainContent_DropDownList1').value;
+
+
+
+           
+
+
+            var SuccessFlag = 0;
+            var primaryUrl = "http://127.0.0.1:";
+
+            try {
+                var protocol = window.location.href;
+                if (protocol.indexOf("https") >= 0) {
+                    primaryUrl = "https://127.0.0.1:";
+                }
+            } catch (e)
+            { }
+
+              //alert(primaryUrl);
+            if (DrpVal == '2') {
+                primaryUrl = "http://127.0.0.1:"
+            }
+             
+            debugger;
+            url = "";
+            //alert("Please wait while discovering port from 11100 to 11120.\nThis will take some time.");
+            for (var i = 11100; i <= 11120; i++) {
+
+                var verb = "RDSERVICE";
+                var err = "";
+                SuccessFlag = 0;
+                var res;
+                $.support.cors = true;
+                var httpStaus = false;
+                var jsonstr = "";
+                var data = new Object();
+                var obj = new Object();
+
+             
+
+
+
+                $.ajax({
+
+                    type: "RDSERVICE",
+                    async: false,
+                    crossDomain: true,
+                    url: primaryUrl + i.toString(),
+                    contentType: "text/xml; charset=utf-8",
+                    processData: false,
+                    cache: false,
+                    crossDomain: true,
+
+                    success: function (data) {
+
+                        httpStaus = true;
+                        res = { httpStaus: httpStaus, data: data };
+                        //alert(data);
+                        finalUrl = primaryUrl + i.toString();
+                        var $doc = $.parseXML(data);
+                        var CmbData1 = $($doc).find('RDService').attr('status');
+                        var CmbData2 = $($doc).find('RDService').attr('info');
+
+                        debugger;
+                        if (RegExp('\\b' + 'Mantra' + '\\b').test(CmbData2) == true && DrpVal == '1') {
+
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/rd/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/rd/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(1).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/rd/info") {
+                                MethodInfo = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/rd/info") {
+                                MethodInfo = $($doc).find('Interface').eq(1).attr('path');
+                            }
+
+
+                            SuccessFlag = 1;
+                           // alert("RDSERVICE Discover Successfully");
+
+                            //debugger;
+                            var t = finalUrl + MethodCapture;
+                            document.getElementById('MainContent_hdnMethodCapture').value = t;
+
+
+
+                            // alert(t);
+
+                            //alert(finalUrl + MethodCapture);
+                            return;
+
+                        }
+                        else if (DrpVal == '2') {
+
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(1).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/info") {
+                                MethodInfo = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/info") {
+                                MethodInfo = $($doc).find('Interface').eq(1).attr('path');
+                            }
+
+
+                            SuccessFlag = 1;
+                            // alert("RDSERVICE Discover Successfully.... morpho");
+
+                            //debugger;
+                            var t = finalUrl + '/capture';
+                            document.getElementById('MainContent_hdnMethodCapture').value = t;
+
+
+                            // alert(t);
+
+                            //alert(finalUrl + MethodCapture);
+                            return;
+
+                        }
+                        if (RegExp('\\b' + 'Mantra IRIS' + '\\b').test(CmbData2) == true && DrpVal == '3') {
+
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/rd/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/rd/capture") {
+                                MethodCapture = $($doc).find('Interface').eq(1).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(0).attr('path') == "/rd/info") {
+                                MethodInfo = $($doc).find('Interface').eq(0).attr('path');
+                            }
+                            if ($($doc).find('Interface').eq(1).attr('path') == "/rd/info") {
+                                MethodInfo = $($doc).find('Interface').eq(1).attr('path');
+                            }
+
+
+                            SuccessFlag = 1;
+                           // alert("RDSERVICE Discover IRIS Successfully");
+
+                            //debugger;
+                            var t = finalUrl + MethodCapture;
+                            document.getElementById('MainContent_hdnMethodCapture').value = t;
+
+
+
+                                // alert(t);
+
+                                //alert(finalUrl + MethodCapture);
+                            return;
+
+                        }
+                        else {
+
+                        }
+
+                        //  alert(CmbData1);
+                        //  alert(CmbData2);
+
+                    },
+                    error: function (jqXHR, ajaxOptions, thrownError) {
+                        if (i == "8005" && OldPort == true) {
+                            OldPort = false;
+                            i = "11099";
+                        }
+
+                        //alert(thrownError);
+
+                        //res = { httpStaus: httpStaus, err: getHttpError(jqXHR) };
+                    },
+
+                });
+
+
+
+            if (SuccessFlag == 1) {
+                break;
+            }
+
+                //$("#ddlAVDM").val("0");
+
+        }
+
+        if (SuccessFlag == 0) {
+            //alert("Connection failed Please try again.");
+        }
+
+
+
+            //$('#txtDeviceInfo').val(DataXML);
+
+
+
+        return res;
+    }
+    //
+
+
+    function CaptureMantra() {
+
+        discoverAvdm();
+        
+
+        var t = document.getElementById('MainContent_hdnMethodCapture').value;
+            var url = t;
+           // alert(url);
+            //alert(finalUrl);
+            //alert(MethodCapture);
+
+            var DrpVal = document.getElementById('MainContent_DropDownList1').value;
+            if (DrpVal == "1")
+                var PIDOPTS = '<PidOptions ver=\"1.0\">' + '<Opts fCount=\"1\" fType=\"0\" iCount=\"0\" iType=\"\" pCount=\"0\" pType=\"\" format=\"0\" pidVer=\"2.0\" timeout=\"10000\" otp=\"\" env=\"P\" wadh=\"\" posh=\"\"/>' + '</PidOptions>';
+            else if (DrpVal == "2")
+                var PIDOPTS = '<PidOptions ver=\"1.0\">' + '<Opts fCount=\"1\" fType=\"0\" iCount=\"\" iType=\"\" pCount=\"\" pType=\"\" format=\"0\" pidVer=\"2.0\" timeout=\"10000\" otp=\"\" wadh=\"\" posh=\"\"/>' + '</PidOptions>';
+            else if (DrpVal == "3")
+                var PIDOPTS = '<PidOptions ver=\"1.0\">' + '<Opts fCount=\"0\" fType=\"0\" iCount=\"1\" iType=\"\" pCount=\"0\" pType=\"\" format=\"0\" pidVer=\"2.0\" timeout=\"50000\" otp=\"\" env=\"P\" wadh=\"\" posh=\"\"/>' + '</PidOptions>';
+            /*format=\"0\"     --> XML
+         format=\"1\"     --> Protobuf
+         */
+
+
+
+
+            var xhr;
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf("MSIE ");
+            if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) // If Internet Explorer, return version number
+            {
+                //IE browser
+                xhr = new ActiveXObject("Microsoft.XMLHTTP");
+            } else {
+                //other browser
+                xhr = new XMLHttpRequest();
+            }
+            xhr.open('CAPTURE', url, true);
+            xhr.setRequestHeader("Content-Type", "text/xml");
+            xhr.setRequestHeader("Accept", "text/xml");
+
+            xhr.onreadystatechange = function () {
+                //if(xhr.readyState == 1 && count == 0){
+                //	fakeCall();
+                //}
+                if (xhr.readyState == 4) {
+                    var status = xhr.status;
+
+                    if (status == 200) {
+                        debugger;
+                        //var dat = document.getElementById('MainContent_lblData').innerText;
+                        // alert(dat);
+                        // alert(xhr.responseText);
+                        document.getElementById('MainContent_hndData').value = xhr.responseText;
+                        var result = xhr.responseText;
+                        if (result.toString().length > 500) {
+                            document.getElementById('MainContent_Label2').innerText = "Capture Succcessful";
+                            document.getElementById('MainContent_Image3').style.visibility = "visible";
+                           document.getElementById('MainContent_Image2').style.visibility = "hidden";
+                           document.getElementById('MainContent_Image5').style.visibility = "hidden";
+                          
+                      }
+                        else {
+                            if (DrpVal == "3")
+                                document.getElementById('MainContent_Label2').innerText = "Please Insert your eyes Properly..!!!!!";
+                            else 
+                                document.getElementById('MainContent_Label2').innerText = "Please Insert your thumb properly....!!!!!";
+                      }
+                        //if(xhr.responseText.indexOf("errCode=\"100\"") != -1){
+                        //alert(xhr.responseText);
+                        //fakeCall();
+                        //Capture();
+                        //}else{
+                        //    alert(xhr.responseText);
+                        //    console.log(xhr.response);
+                        //}
+                  } else {
+
+                      console.log(xhr.response);
+                  }
+              }
+            };
+            // document.forms[0].appendChild(xhr.send(PIDOPTS));
+          xhr.send(PIDOPTS);
+      }
+    </script>
+
+    <script language="javascript" type="text/javascript">
+        function ShowHide(Id, img) {
+            var div = document.getElementById(Id);
+            var img = document.getElementById(img);
+            if (div.style.display == "none") {
+                div.style.display = "";
+                img.src = "../Images/RemoveIcon.png"
+
+            }
+            else {
+                div.style.display = "none";
+                img.src = "../Images/AddIcon.png"
+            }
+        }      
+
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        function onlyNumbers(evt) {
+            var e = event || evt;
+            var charCode = e.which || e.keyCode;
+            if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+                alert('Enter Numbers Only');
+                return false;
+            }
+            return true;
+        } 
+    </script>
+    <style type="text/css">
+        #MainContent_div1
+        {
+            filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale);
+        }
+        </style>
+       
+    <script language="javascript" type="text/javascript">
+        //Note  We have to add a script file in Masterpage/head of this page to run this java script
+        function PreviewImg(imgFile, id) {
+
+            var newPreview = document.getElementById(id);
+            newPreview.src = imgFile.value;
+            newPreview.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgFile.value;
+            newPreview.style.width = "100px";
+            newPreview.style.height = "100px";
+        }
+    </script>
+
+<link href="./kisan registion setep_files/WebResource.axd" type="text/css" rel="stylesheet"></head>
+<body>
+    <form method="post" action="https://dbtagriculture.bihar.gov.in/RegFarmer/" onsubmit="javascript:return WebForm_OnSubmit();" id="ctl01">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJNDIwMjg2MzEzDxYEHhNWYWxpZGF0ZVJlcXVlc3RNb2RlAgEeCUFkaGFyQXV0aAUHU1VDQ0VTUxYCZg9kFgICAw9kFgICBQ9kFg4CCQ8PFgIeB1Zpc2libGVoZBYCAgEPEGRkFgFmZAILDw8WAh8CaGQWEAIBDw8WBB4EVGV4dAUMODU3NTE0MjU1NjIwHgdFbmFibGVkaGRkAgUPDxYCHwJoZGQCBw8PFgYfAmgfAwUNa2F1c2hhbCBrdW1hch8EaGRkAgsPDxYCHwRoZGQCDQ8PFgIfA2VkZAIPDw8WAh8CZ2RkAhEPDxYGHwJnHwMFBjQ3NDE0Nh8EaGRkAhMPDxYCHwJnZGQCDQ9kFgYCAQ8QZGQWAGQCEQ8PFgIfAmhkZAITDw8WAh8CaGRkAg8PZBYCAgEPDxYCHwJnZGQCEQ8PFgIfAmdkFgYCAw8QDxYCHgdDaGVja2VkZ2RkZGQCBQ8QDxYCHwVoZGRkZAIHDxAPFgIfBWhkZGRkAhMPZBYCZg9kFgICAQ8PFgIfAmdkFgYCAQ8PFgIfAmdkFgoCBQ8PFgQfAwUNa2F1c2hhbCBrdW1hch8EaGRkAi0PEA8WBh4NRGF0YVRleHRGaWVsZAUIRGlzdE5hbWUeDkRhdGFWYWx1ZUZpZWxkBQhEaXN0Q29kZR4LXyFEYXRhQm91bmRnZBAVJxotLeCkmuCkr+CkqCDgpJXgpLDgpYfgpIItLQZBUkFSSUEFQVJXQUwKQVVSQU5HQUJBRAVCQU5LQQlCRUdVU0FSQUkJQkhBR0FMUFVSB0JIT0pQVVIFQlVYQVIJREFSQkhBTkdBBEdBWUEJR09QQUxHQU5KBUpBTVVJCUpFSEFOQUJBRAZLQUlNVVIHS0FUSUhBUghLSEFHQVJJQQpLSVNIQU5HQU5KCkxBS0hJU0FSQUkJTUFESEVQVVJBCU1BREhVQkFOSQZNVU5HRVILTVVaQUZGQVJQVVIHTkFMQU5EQQZOQVdBREESUEFTSENISU0gQ0hBTVBBUkFOBVBBVE5BD1BVUkJJIENIQU1QQVJBTgZQVVJOSUEGUk9IVEFTB1NBSEFSU0EKU0FNQVNUSVBVUgVTQVJBTgpTSEVJS0hQVVJBB1NIRU9IQVIJU0lUQU1BUkhJBVNJV0FOBlNVUEFVTAhWQUlTSEFMSRUnATADMjA5AzI0MAMyMzUDMjI1AzIyMgMyMjQDMjMxAzIzMgMyMTUDMjM2AzIxNwMyMzgDMjM5AzIzMwMyMTIDMjIzAzIxMAMyMjcDMjEzAzIwNwMyMjYDMjE2AzIyOQMyMzcDMjAzAzIzMAMyMDQDMjExAzIzNAMyMTQDMjIxAzIxOQMyMjgDMjA1AzIwNgMyMTgDMjA4AzIyMBQrAydnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cWAWZkAjEPEGRkFgBkAjUPEGRkFgBkAjkPEGRkFgBkAgMPDxYCHwJnZBYCAgMPEA8WBB8GBQRCYW5rHwhnZBAVSxotLeCkmuCkr+CkqCDgpJXgpLDgpYfgpIItLRNBaXJ0ZWwgUGF5bWVudCBCYW5rDkFMTEFIQUJBRCBCQU5LC0FOREhSQSBCQU5LMkF1cmFuZ2FiYWQgRGlzdHJpY3QgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuCUFYSVMgQkFOSwxCYW5kaGFuIEJhbmsOQkFOSyBPRiBCQVJPREENQkFOSyBPRiBJTkRJQRNCQU5LIE9GIE1BSEFSQVNIVFJBE0JBTksgT0YgTUFIQVJBU0hUUkEoQmVndXNhcmFpIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLhFCaWhhciBHcmFtaW4gQmFuaxpCaWhhciBTdGF0ZSBDTy1PUCBCYW5rIEx0ZAtDQU5BUkEgQkFOSxVDRU5UUkFMIEJBTksgT0YgSU5ESUEiQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBBcmEgTHRkLh5DZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4JQ0lUSSBCQU5LEENPUlBPUkFUSU9OIEJBTksZRGFrc2hpbiBCaWhhciBHcmFtaW4gQmFuawlERU5BIEJBTksMRkVERVJBTCBCQU5LEkZpbm8gUGF5bWVudHMgQmFuayhHb3BhbGdhbmogQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuCUhERkMgQkFOSxJJQ0lDSSBCQU5LIExJTUlURUQJSURCSSBCQU5LCUlERkMgQmFuawtJTkRJQU4gQkFOSxRJTkRJQU4gT1ZFUlNFQVMgQkFOSx9JbmRpYW4gUG9zdCBQYXltZW50cyBCYW5rKElQUEIpDUlORFVTSU5EIEJBTkseSkFNTVUgQU5EIEtBU0hNSVIgQkFOSyBMSU1JVEVECUphbmEgQmFuay5LYXRpaGFyIERpc3RyaWN0IENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkMUtoYWdhcmlhIERpc3RyaWN0ICBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4bS09UQUsgTUFISU5EUkEgQkFOSyBMSU1JVEVEGE1hZGh5YSBCaWhhciBHcmFtaW4gQmFuayVNYWdhZGggQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuK01vbmdoeXItSmFtdWkgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQqTXV6emFmYXJwdXIgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuJk5hbGFuZGEgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuJ05hdGlvbmFsIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLiVOYXdhZGEgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuGU9SSUVOVEFMIEJBTksgT0YgQ09NTUVSQ0UpUGF0bGlwdXRyYSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4SUGF5dG0gUGF5bWVudCBCYW5rFFBVTkpBQiBBTkQgU0lORCBCQU5LFFBVTkpBQiBOQVRJT05BTCBCQU5LJVB1cm5lYSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4lUm9oaWthIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLilTYW1hc3RpcHVyIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLi5TYXNhcmFtLUJoYWJodWEgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuA1NCSRdTVEFOREFSRCBDSEFSVEVSRUQgQkFOSyBTVEFURSBCQU5LIE9GIEJJS0FORVIgQU5EIEpBSVBVUhdTVEFURSBCQU5LIE9GIEhZREVSQUJBRBRTVEFURSBCQU5LIE9GIE1ZU09SRRVTVEFURSBCQU5LIE9GIFBBVElBTEEYU1RBVEUgQkFOSyBPRiBUUkFWQU5DT1JFDlNZTkRJQ0FURSBCQU5LLFRoZSBCaGFnYWxwdXIgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuK1RoZSBNb3RpaGFyaSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4sVGhlIFNpdGFtYXJoaSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4oVGhlIFNpd2FuIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLghVQ08gQkFOSw9VamppdmFuIEZpbmFuY2UTVU5JT04gQkFOSyBPRiBJTkRJQRRVTklURUQgQkFOSyBPRiBJTkRJQRpVdGthcnNoIFNtYWxsIEZpbmFuY2UgQmFuaxdVdHRhciBCaWhhciBHcmFtaW4gQmFuay9WYWlzaGFsaSBEaXN0cmljdCBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZAtWSUpBWUEgQkFOSwhZRVMgQkFOSxVLATATQWlydGVsIFBheW1lbnQgQmFuaw5BTExBSEFCQUQgQkFOSwtBTkRIUkEgQkFOSzJBdXJhbmdhYmFkIERpc3RyaWN0IENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLglBWElTIEJBTksMQmFuZGhhbiBCYW5rDkJBTksgT0YgQkFST0RBDUJBTksgT0YgSU5ESUETQkFOSyBPRiBNQUhBUkFTSFRSQRNCQU5LIE9GIE1BSEFSQVNIVFJBKEJlZ3VzYXJhaSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4RQmloYXIgR3JhbWluIEJhbmsaQmloYXIgU3RhdGUgQ08tT1AgQmFuayBMdGQLQ0FOQVJBIEJBTksVQ0VOVFJBTCBCQU5LIE9GIElORElBIkNlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgQXJhIEx0ZC4eQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuCUNJVEkgQkFOSxBDT1JQT1JBVElPTiBCQU5LGURha3NoaW4gQmloYXIgR3JhbWluIEJhbmsJREVOQSBCQU5LDEZFREVSQUwgQkFOSxJGaW5vIFBheW1lbnRzIEJhbmsoR29wYWxnYW5qIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLglIREZDIEJBTksSSUNJQ0kgQkFOSyBMSU1JVEVECUlEQkkgQkFOSwlJREZDIEJhbmsLSU5ESUFOIEJBTksUSU5ESUFOIE9WRVJTRUFTIEJBTksfSW5kaWFuIFBvc3QgUGF5bWVudHMgQmFuayhJUFBCKQ1JTkRVU0lORCBCQU5LHkpBTU1VIEFORCBLQVNITUlSIEJBTksgTElNSVRFRAlKYW5hIEJhbmsuS2F0aWhhciBEaXN0cmljdCBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZDFLaGFnYXJpYSBEaXN0cmljdCAgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuG0tPVEFLIE1BSElORFJBIEJBTksgTElNSVRFRBhNYWRoeWEgQmloYXIgR3JhbWluIEJhbmslTWFnYWRoIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLitNb25naHlyLUphbXVpIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkKk11enphZmFycHVyIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLiZOYWxhbmRhIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLidOYXRpb25hbCBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4lTmF3YWRhIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLhlPUklFTlRBTCBCQU5LIE9GIENPTU1FUkNFKVBhdGxpcHV0cmEgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuElBheXRtIFBheW1lbnQgQmFuaxRQVU5KQUIgQU5EIFNJTkQgQkFOSxRQVU5KQUIgTkFUSU9OQUwgQkFOSyVQdXJuZWEgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuJVJvaGlrYSBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4pU2FtYXN0aXB1ciBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4uU2FzYXJhbS1CaGFiaHVhIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLgNTQkkXU1RBTkRBUkQgQ0hBUlRFUkVEIEJBTksgU1RBVEUgQkFOSyBPRiBCSUtBTkVSIEFORCBKQUlQVVIXU1RBVEUgQkFOSyBPRiBIWURFUkFCQUQUU1RBVEUgQkFOSyBPRiBNWVNPUkUVU1RBVEUgQkFOSyBPRiBQQVRJQUxBGFNUQVRFIEJBTksgT0YgVFJBVkFOQ09SRQ5TWU5ESUNBVEUgQkFOSyxUaGUgQmhhZ2FscHVyIENlbnRyYWwgQ28tT3BlcmF0aXZlIEJhbmsgTHRkLitUaGUgTW90aWhhcmkgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuLFRoZSBTaXRhbWFyaGkgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQuKFRoZSBTaXdhbiBDZW50cmFsIENvLU9wZXJhdGl2ZSBCYW5rIEx0ZC4IVUNPIEJBTksPVWpqaXZhbiBGaW5hbmNlE1VOSU9OIEJBTksgT0YgSU5ESUEUVU5JVEVEIEJBTksgT0YgSU5ESUEaVXRrYXJzaCBTbWFsbCBGaW5hbmNlIEJhbmsXVXR0YXIgQmloYXIgR3JhbWluIEJhbmsvVmFpc2hhbGkgRGlzdHJpY3QgQ2VudHJhbCBDby1PcGVyYXRpdmUgQmFuayBMdGQLVklKQVlBIEJBTksIWUVTIEJBTksUKwNLZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZGQCBQ8PFgIfAmdkFgICAQ8PFgQfAwUMODU3NTE0MjU1NjIwHwRoZGQCHw9kFgYCAQ8QDxYCHwVoZGRkZAIDDxAPFgIfBWdkZGRkAgUPZBYEAgEPEGRkFgBkAgMPDxYCHwNlZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgYFG2N0bDAwJE1haW5Db250ZW50JGNoa0Zhcm1lcgUYY3RsMDAkTWFpbkNvbnRlbnQkTE5MY3NjBR5jdGwwMCRNYWluQ29udGVudCRJbWFnZUJ1dHRvbjEFF2N0bDAwJE1haW5Db250ZW50JGN0bDAxBR5jdGwwMCRNYWluQ29udGVudCRjaGtDcmVkaXRZZXMFHWN0bDAwJE1haW5Db250ZW50JGNoa0NyZWRpdE5vsaHmqIy0RnAnGYYczpfXpzyaoZY=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['ctl01'];
+if (!theForm) {
+    theForm = document.ctl01;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./kisan registion setep_files/WebResource(1).axd" type="text/javascript"></script>
+
+
+<script src="./kisan registion setep_files/ScriptResource.axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="./kisan registion setep_files/ScriptResource(2).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(3).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(4).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(5).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(6).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(7).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(8).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(9).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(10).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(11).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(12).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(13).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(14).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(15).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(16).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(17).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(18).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(19).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(20).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(21).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(22).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(23).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(24).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(25).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(26).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(27).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(28).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(29).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(30).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(31).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(32).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(33).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(34).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(35).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(36).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(37).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(38).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(39).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(40).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(41).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(42).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(43).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(44).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(45).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(46).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(47).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(48).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(49).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(50).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(51).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(52).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(53).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(54).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(55).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(56).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(57).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(58).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(59).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(60).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(61).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(62).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(63).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(64).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(65).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(66).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(67).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(68).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(69).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(70).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(71).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(72).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(73).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(74).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(75).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(76).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(77).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(78).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(79).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(80).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(81).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(82).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(83).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(84).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(85).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(86).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(87).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(88).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(89).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(90).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(91).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(92).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(93).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(94).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(95).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(96).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(97).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(98).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(99).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(100).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(101).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(102).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(103).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(104).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(105).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(106).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(107).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(108).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(109).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(110).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(111).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(112).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(113).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(114).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(115).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(116).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(117).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(118).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(119).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(120).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(121).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(122).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(123).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(124).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(125).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(126).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(127).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(128).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(129).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(130).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(131).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(132).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(133).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(134).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(135).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(136).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(137).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(138).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(139).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(140).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(141).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(142).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(143).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(144).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(145).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(146).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(147).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(148).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(149).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(150).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(151).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(152).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(153).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(154).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(155).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(156).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(157).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(158).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(159).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(160).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(161).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(162).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(163).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(164).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(165).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(166).axd" type="text/javascript"></script>
+<script src="./kisan registion setep_files/ScriptResource(167).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+null;if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="B01ED1AF">
+	<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="SRTj0H4y0cj0hNClnTFhFB1rOCDUiJm5l7HvEW3vgzsyLgp9NWAfCPohtWSb8x3qCgk5woBZajLZpBbmutA-6wqMgLvdig3f30gV-MiD_jZgXDSW9B4J5hXVN3Z8w70RBe5LJA2">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAKIBAkqLcAqbhpHt18gEcYl8uIFBZYDVNXrnB/9WmjDFKj4JVgD3K4NYQ2hZi1Xe90kMbOXAv5nkJsTLImAlLMAzrgTtXOFN4S9x/YkfftVJET+rU7iTVOEcZnnn2A5T8mQIcJi/+22y2G+Qet4qrXx53mww7RPXw0FioCyGEWLwJzM97XuE8DDQcYh+ySshUvt0vIh3W3Oxma3DnNRCGRMHyNvnsiiN0dPGgBsoPTCPYwHgYFgJ/tYcnBLqW3XZn9235DfIBEqkzdEuL9JSsXkEkS3So+yjrLQLdwiJ7qkdsjfZH1xzOLE1HJTvDwS1VmXesVk2ubHjkBccQYjsQEriKWb1QLOi0v4De9MTU2K5/gBUjknalsOLPwDDeEC77aHdebvXh3s2uKsl1bYwf1MAQkF8elX7qSrFrsH1C62epKFFpFjIEAL+QaVroykBXO/yCqP8+EZiwiNq0ldk1lgYTYTsgVvFz09jdBveAXmOAqsrRUrKK7FEvSDa5ZaX4HTcOrwlVExggZJ19XtnZ9fjvbWTtvJ0Nlu4F+bZ+e836aY2uOTaW3+mMGq707t48nswv1q4pf0nNGpyKclsRmbAyRbUg/MZKamFmT8e7+reNyicngsLauYMDX1N8GaDnf9xjRkr9q1MP2DQmgPQ1rxuRq6ftqj+yZYQzKQqeQP/Q1XRfoGU4xU32sdMYGsCX1cbEJJZT/+oe0S8VFyZ09/+8UcfScq+XFEOUuUVrKwtBoGt0B4fXjpxPlnBpzNg4i8R+7GPZ5yoHvTD5KzRNYA66hFA06crop5DqUPlfRAXXpZyhjKO645tu1sXbCVT3vJKzUi8p21VyzVLMYP2jWQQHYKHEnF8JfseE9pXY1UIkMqZvl77Eltq8HCOc/5HhRSFEqlxG3+BBylzaK9vfQOo9EBdlzpRXJ/85bqqlhIHg79HpPYWHd26SZoU5AmE8d7+gINGxIoCzKmGsK/sYbjrj4Rh2mBggjVQJQf8ZltTJUVKw77tKcV4dziNdaLlYyxIGmNO6h5DOpzrF3++eXD2ktnDN8m6ATHLrSL5n0VWifXlOaTkUzVtEMqcoPMFPCFLU2vPJPgB8aSmFNsX6rgJz9+VKqV8HLLDUhTlQYFpLIuBzEmnv4f60NcQoOjCurRHN8Hm74BhNwoE6tZR2lyWvo4XmUjOoR5U28HR9MEY9aLpHlzoQfw8E975hho7SVoa85E8DXG/qcxxgd2M2oiB20WYbMU0s7htqWl3zS0bR9bz8vwWijux+KYznc25aV9gAD2Prn3YcBTma1qLrROaAJA1/A+LceHe9lIBWBSPjETBzU8cuFa5joWkWlu+ZYakVi8viH04wK+iiOXB4wL6vi6nJ+4lq29x2Dss1wi+wcLzmIpC93nhSZC/83veKaRFZZSgTUTDbRbi8b4HzMtMWrjdbCs8appA8YWLegFyCB5YYivzsyouUn1QofzP/KJPIqnEhPAShilwkl3az2Wh7IkfUQRFyJb3uzFmyu2sucarKyzcGqNBdY3O7I1XIGg0gY9GmHFRKsoHDPgBmhCUKyFpchChcSzuXJPhejNDg4jSYyy0JNb+Kyi6t8eGIQ6Zm7pt+r9X/Z+qtDVvmjQ2nGC+LQjyu+CcqQkm8GwHPtZvd274oWPILXx/f22WZV8gJK4vQnEKG+lk2HSPBQn/q7erN21YjWji9woD7kIWVuTiJldjGRhHnH+4W0ccrhSMKArTGLP+bx6t9iWVWAzY1ac6xI+Cwmmf5Lq9SZjXn70wIKpx6kOkqtSw8iNqVmPVbPshZP2E/ZYDXmIFDbgZiKd/LYAU9UgpC52GGRv5+1HWyuonXnGBQ+57Hxi7KHdlm55FndEk4YB3+zkbqqtzyYRft0N9OLDOTIV5L/J9cCPRiW5pCjso+oM9n46xEK9RYZ5csLmoHKzrQWp828M92vaA9/Wxm6ptZsS3W15U02viqurZrmzy1IXfqRz79+x1JYGtfpFa9DE3U+Nm9lP01tDaJGUODnHervywC8T71edTAE1Z/YdUms0FSe2UpEkGpdngw/QXU4vGLiWQiVYN1BZqI+fCtdB6iVJ2tg/jseUfAvSnBPVoblsJm9eGELQOoPMIUKyNs11seOkKZnxBDN+jMM3HIW3mSrY448eHUx9RguU0r7pkzAMok2YrmNgBEWnJIIhcPLB0ibnuYOxR69DZAna8OyhuKARH0zSVSzTEGsZr85Sj6vWpxhkWTi/rITB7xVnTlobgEYHWo9yQEV2FPSjhBZ1lR8xYQpAPPq/Mr90mPWJhj4d2JVKIpPWFgPJCmWe6YaI5/Tr7n2ojxRSDmKZbXAQ5UCeT1ufy1a90KVxz3GwlV5VvydTiyM8SKp1i++1S4UFrrAGGA+HiPTM5zDnJVIYinGNCiATaGuYMkvVqzqOdeAyRh/Ni6rnDiBfHcQRSZ0+wZdQeArJiQ9Nw5Di7+wQaoBk+b75mvvJYuvYQXmrdyBS4/jKwiLrwwk4yLgVE/uJLTG+cq587oHVHLYgBJghsUAGqjNQEtWViy4g/qKIFz2IvqitWRPVmpbq4cjufEM6y/WMj3mtM4vJykITd3Or3+8sMdk9e7n/Q/0i6/UKe1oMRikSpA6xNnAcnLY/WbDqp64zoeTw9v9CopQhCzQKE+C8USqTxu8PUFNL6QWIbPo3c4eN8wJ4ya+QPXk2GnHVuEVszLL0fZ5PD8fzd1B5OrM09kDkPRf0FJTZtL8qVFWodvdRxaefU9n6Wf5mXLAb1fLb/C3u3NWYUIdGmSOqxY92wlGxEQgmxkHoLPY1sDDEcyfctYW+9yERf5NRfWheigkj/ZnW+HD5rVPClNbl97gF90JTP6fWBRgV1UX67cWJhBKhV7tNVGn6h9NT2z/sVcJ6mBPKDq9edV9fydOv5o6dXMI86VdwnL0YmkQx7Wmc4O065L6gyZxHhlbrw9JkURI0KFhp2T4jMvc4GS4m8Q1OsCWcYLCP4nVoZWTx9kZ8aS7uEFf1ZTKUp4E2YNB16HXK0OYMAg3SLSoiQd+kyzm2Ry3MvVb9vrk/5mA+dZT7GTivUmYNGBVipmynIyF2mneNHrxuqU5MXNy8yL0EtoBDCMRetA20XURchNEVxIZYe6kGb5H4WIHmyJ3TTPstwKROnVfYfIP4cOBpUJilcVbOsQ33zpk1nU8RMwjAPqffUIjAHqF0BAtEnaVMKNLXfeJFTB7UprY4z/c29kDgAL9P6omQ5VrkuiqrE7c1oittvU3CIL6E5pDTG/1UGYnTqgLi1MgaWyGysnnV49sz+rKUmy+BQL1XBzJxGf6bUsqKiTfujrMv+36nzR0E81sgnD/7T7PceXFEX8cHSJn9zw8g8kYl8uSinzx+U/Tplzgl00Mdeb0Nrg7eWyylB9brSSkNBMP3hhYVlQOWG/tSdXcsl4LMsmgZCjbnk6BsKvpdB1gz6zRvgmzzClfTmAg6RujPUiPm+YlVwirY=">
+</div>  
+       
+<script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$tsk1', 'ctl01', ['tctl00$MainContent$UpdatePanel1','MainContent_UpdatePanel1'], [], ['ctl00$MainContent$Button2','MainContent_Button2'], 90, 'ctl00');
+//]]>
+</script>
+ 
+    <div class="page">
+         <div class="header">
+        
+        </div>
+        <div class="menucontainer">
+            <table width="100%" cellspacing="0">
+                <tbody><tr>
+                    
+                    <td class="clear topscroll" align="left">
+                        <table cellspacing="0" class="TopMenuSP1">
+	<tbody><tr>
+		<td>
+                                    <a id="LinkButton1" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButton1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="font-weight:bold;">Home</a> <br>
+                                   
+                                </td>
+	</tr>
+</tbody></table>
+
+                    </td>
+                   
+                    <td class="RightCorner">
+                        
+                    </td>
+                </tr>
+            </tbody></table>
+        </div>
+        <table width="100%">
+            <tbody><tr>
+            
+                <td>
+      
+                    <div class="main">
+                        
+    <input type="hidden" name="ctl00$MainContent$hdnMethodCapture" id="MainContent_hdnMethodCapture">
+
+    <div style="padding-bottom: 10px; padding-top: 10px;">
+
+        <table width="100%">
+            <tbody><tr>
+                <td align="center" colspan="2">
+                    <div id="Div1" class="BoxF" style="border: 1px solid #999999; width: 930px; padding: 0px;" align="left">
+                        <div style="background-color: #D5EBE2; color: #000000; margin: 0; line-height: 20pt; font-size: 12pt; text-align: center; height: 32px;">
+                            <strong>नया पंजीकरण</strong>
+                        </div>
+                        <hr style="clear: both; margin: 6px 0px;">
+                </div></td>
+            </tr>
+
+        </tbody></table>
+        <table width="100%">
+            <tbody><tr>
+                <td align="left" style="font-size: 12px;">
+                    <span id="MainContent_lblsessiondata" style="color:Red;font-weight:bold;"></span></td>
+                <td align="right" style="font-size: 12px;">
+                    <a id="MainContent_lnkLogout" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$lnkLogout&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))"></a>
+                </td>
+            </tr>
+        </tbody></table>
+        <div id="MainContent_pnlaadhaarver" style="font-family:Comic Sans MS;font-size:13px;">
+	
+
+            <div class="panel panel-success">
+                <div class="panel-heading">वैध आधार संख्या</div>
+                <div class="panel-body" style="font-size: 12px;">
+                    <table>
+                        <tbody><tr>
+                            <td colspan="3"><b><font style="font-family: verdana; font-size: large; color: #0000FF">क्या आपके पास वैध आधार संख्या है ?</font></b></td>
+                            <td>
+                                &nbsp;</td>
+
+                        </tr>
+                        <tr>
+                            <td colspan="4" style="font-size: 12px;">
+                                <div>
+                                    आधार संख्या कृषि विभाग के सभी अनुदान योजनाओ के लिये अनिवार्य है | आधार संख्या उपलब्ध नहीं होने की स्थिति में कृपया निकटतम आधार नामांकन केंद्र में जाए अथवा अपने निकटतम आधार केंद्र से संपर्क करे |
+               निकटतम आधार केंद्र की जानकारी किसान इस वेबसाइट ((https://appointments.uidai.gov.in/centersearch.aspx) से प्राप्त कर सकते है | 
+
+                                </div>
+                            </td>
+                        </tr>
+
+                    </tbody></table>
+
+                </div>
+            </div>
+        
+</div>
+
+
+        
+        
+
+        
+
+        
+
+        <div id="MainContent_pnlTypeofReg">
+	
+            <table width="100%" class="table table-bordered">
+                <tbody><tr>
+                    <td style="font-family: Verdana; font-size: 12px;" colspan="2" valign="middle">Aadhaar Authentication:
+            <img id="MainContent_Image1" src="./kisan registion setep_files/auth.png" style="width:35px;">
+                    </td>
+                    <td style="font-family: Verdana; font-size: 12px;">&nbsp;</td>
+
+                </tr>
+
+                <tr>
+                    <td style="font-family: Verdana; font-size: 12px;">
+                        <input id="MainContent_chkFarmer" type="checkbox" name="ctl00$MainContent$chkFarmer" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkFarmer\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="MainContent_chkFarmer">किसान पंजीकरण</label>
+                    </td>
+                    <td style="font-family: Verdana; font-size: 12px;">
+                        <span class="aspNetDisabled"><input id="MainContent_chkVender" type="checkbox" name="ctl00$MainContent$chkVender" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkVender\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="MainContent_chkVender">विक्रेता पंजीकरण</label></span>
+                    </td>
+                    <td style="font-family: Verdana; font-size: 12px;">
+                        <span class="aspNetDisabled"><input id="MainContent_chkSheed" type="checkbox" name="ctl00$MainContent$chkSheed" disabled="disabled" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkSheed\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="MainContent_chkSheed">ऑनलाइन अनुज्ञप्ति प्रमाण-पत्र</label></span>
+                    </td>
+                </tr>
+
+            </tbody></table>
+        
+</div>
+    </div>
+
+
+    <div id="MainContent_UpdatePanel1">
+	
+            <div id="MainContent_pnlKisan">
+		
+
+                <div id="MainContent_pnlpersonalinfo" style="border-style:Double;font-family:Comic Sans MS;font-size:13px;">
+			
+                    <div class="panel panel-success">
+                        <div class="panel-heading" style="font-weight: bold;">व्यक्तिगत जानकारी</div>
+                        <div class="panel-body" style="font-size: 12px;">
+                            <table class="table table-bordered">
+                                <tbody><tr style="border-style: solid; border-width: thin">
+                                    
+                                </tr>
+
+                                <tr>
+                                    <td align="right" class="style3">वित्तीय वर्ष :</td>
+                                    <td>
+                                        <span id="MainContent_lblfinyear" style="color:Green;font-weight:bold;">2018-19</span>
+                                    </td>
+                                    
+ <td align="right">किसान का प्रकार : </td>
+                                    <td>
+                                            <select name="ctl00$MainContent$ddlKisan" id="MainContent_ddlKisan" class="btn btn-default dropdown-toggle" style="width:150px;">
+				<option selected="selected" value="0">--चयन करें--</option>
+				<option value="1">स्वयं</option>
+				<option value="2">वास्तविक खेतिहर </option>
+
+			</select>
+                          
+
+                                    </td>
+                                </tr>
+                                <tr style="border-style: solid; border-width: thin">
+                                    <td align="right">
+                                        <font color="Red">*</font>किसान का प्रथम नाम :
+                                    </td>
+                                    <td>
+                                       <input name="ctl00$MainContent$txtfirstName" type="text" value="" maxlength="20" id="MainContent_txtfirstName" enabled="enabled" class="aspNetDisabled uppercase form-control" onkeypress="return ValidateAlpha(event);" style="width:200px;">
+                                        <span id="MainContent_RequiredFieldValidator4" style="color:Red;display:none;"></span>
+                                        
+                                    </td>
+                                    <td align="right">किसान का अंतिम नाम :
+                                    </td>
+                                    <td>
+                                        <input name="ctl00$MainContent$txtLastName" type="text" maxlength="20" id="MainContent_txtLastName" disabled="disabled" class="aspNetDisabled uppercase form-control" onkeypress="return ValidateAlpha(event);" style="width:200px;">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style3">
+                                        <font color="Red">*</font>पिता/माँ/पति का नाम :
+                                    </td>
+                                    <td>
+                                        <input name="ctl00$MainContent$txtFatherName" type="text" maxlength="50" id="MainContent_txtFatherName" class="uppercase form-control" onkeypress="return ValidateAlpha(event);" style="width:200px;">
+                                        <span id="MainContent_RequiredFieldValidator5" style="display:none;"></span>
+                                        
+                                    </td>
+                                    <td valign="top" align="right" class="style3"><font color="Red">*</font>
+                                        जन्म तिथि :
+                                    </td>
+
+                                    <td colspan="3">
+                                        <input name="ctl00$MainContent$txtDOB" type="text" maxlength="11" id="MainContent_txtDOB" class="form-control" style="width:200px;">
+                                        <input type="hidden" name="ctl00$MainContent$TextBoxWatermarkExtender1_ClientState" id="MainContent_TextBoxWatermarkExtender1_ClientState">
+                                        <img id="MainContent_imgcal" class="smallSize" src="./kisan registion setep_files/Calendar_scheduleHS.png">
+                                        [31-02-1978]
+            <span id="MainContent_regexpName" class="smallSize" style="border-color:Red;visibility:hidden;">This date of birth is not validate.</span>
+                                        <span id="MainContent_RangeValidator2" class="smallSize" style="visibility:hidden;">Invalid DOB. It must be between 01-Jan-950 to 31-Dec-2002.</span>
+                                        
+                                        <span id="MainContent_RequiredFieldValidator14" class="smallSize" style="display:none;"></span>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style3">वर्तमान उम्र (साल में):</td>
+                                    <td class="style1">
+                                        
+                                    </td>
+                                    <td align="right" class="style3"><font color="Red">*</font>
+                                        लिंग(जेंडर) :
+                                    </td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlGender" id="MainContent_ddlGender" class="btn btn-default dropdown-toggle" style="width:150px;">
+				<option selected="selected" value="0">--चुने--</option>
+				<option value="1">पुरुष</option>
+				<option value="2">स्त्री</option>
+				<option value="3">अन्य</option>
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator13" style="visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style3"><font color="Red">*</font>जाति श्रेणी</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlcast" id="MainContent_ddlcast" class="btn btn-default dropdown-toggle" style="width:200px;">
+				<option selected="selected" value="0">--चुने--</option>
+				<option value="1">सामान्य</option>
+				<option value="2">अनुसूचित जाति</option>
+				<option value="3">अनुसूचित जनजाति</option>
+				<option value="4">अल्पसंख्यक</option>
+				<option value="5">अति पिछड़ा वर्ग</option>
+				<option value="6">पिछड़ा वर्ग</option>
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator8" style="visibility:hidden;">*</span>
+                                    </td>
+                                    <td align="right" class="style3"><font color="Red">*</font>कृषक श्रेणी</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlfarmertype" id="MainContent_ddlfarmertype" class="btn btn-default dropdown-toggle" style="width:150px;">
+				<option selected="selected" value="0">--चुने--</option>
+				<option value="1">बृहत किसान (2 हेक्टेअर से ज्यादा)</option>
+				<option value="2">लघु किसान (1-2 हेक्टेअर)</option>
+				<option value="3">सीमांत किसान (1 हेक्टेअर से कम)</option>
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator9" style="visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style3"><font color="Red">*</font>जिला:</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddldistric" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddldistric\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddldistric" class="btn btn-default dropdown-toggle" style="width:200px;">
+				<option selected="selected" value="0">--चयन करें--</option>
+				<option value="209">ARARIA</option>
+				<option value="240">ARWAL</option>
+				<option value="235">AURANGABAD</option>
+				<option value="225">BANKA</option>
+				<option value="222">BEGUSARAI</option>
+				<option value="224">BHAGALPUR</option>
+				<option value="231">BHOJPUR</option>
+				<option value="232">BUXAR</option>
+				<option value="215">DARBHANGA</option>
+				<option value="236">GAYA</option>
+				<option value="217">GOPALGANJ</option>
+				<option value="238">JAMUI</option>
+				<option value="239">JEHANABAD</option>
+				<option value="233">KAIMUR</option>
+				<option value="212">KATIHAR</option>
+				<option value="223">KHAGARIA</option>
+				<option value="210">KISHANGANJ</option>
+				<option value="227">LAKHISARAI</option>
+				<option value="213">MADHEPURA</option>
+				<option value="207">MADHUBANI</option>
+				<option value="226">MUNGER</option>
+				<option value="216">MUZAFFARPUR</option>
+				<option value="229">NALANDA</option>
+				<option value="237">NAWADA</option>
+				<option value="203">PASHCHIM CHAMPARAN</option>
+				<option value="230">PATNA</option>
+				<option value="204">PURBI CHAMPARAN</option>
+				<option value="211">PURNIA</option>
+				<option value="234">ROHTAS</option>
+				<option value="214">SAHARSA</option>
+				<option value="221">SAMASTIPUR</option>
+				<option value="219">SARAN</option>
+				<option value="228">SHEIKHPURA</option>
+				<option value="205">SHEOHAR</option>
+				<option value="206">SITAMARHI</option>
+				<option value="218">SIWAN</option>
+				<option value="208">SUPAUL</option>
+				<option value="220">VAISHALI</option>
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator10" style="visibility:hidden;">*</span>
+                                    </td>
+                                    <td align="right" class="style3"><font color="Red">*</font>प्रखण्ड:</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlblock" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlblock\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlblock" class="btn btn-default dropdown-toggle" style="width:150px;">
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator6" typesetfocusonerror="true" style="visibility:hidden;">*</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style3"><font color="Red">*</font>ग्राम पंचायत:</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlpanchayat" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlpanchayat\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlpanchayat" class="btn btn-default dropdown-toggle" style="width:200px;">
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator7" typesetfocusonerror="true" style="visibility:hidden;">*</span>
+                                    </td>
+                                    <td align="right" class="style3"><font color="Red">*</font>गाँव</td>
+                                    <td>
+                                        <select name="ctl00$MainContent$ddlvill" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$ddlvill\&#39;,\&#39;\&#39;)&#39;, 0)" id="MainContent_ddlvill" tabindex="1" class="btn btn-default dropdown-toggle" style="width:150px;">
+
+			</select>
+                                        <span id="MainContent_RequiredFieldValidator12" typesetfocusonerror="true" style="visibility:hidden;">*</span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="right" class="style4"><font color="Red">*</font>
+                                        मोबाइल नंबर :
+                                    </td>
+                                    <td align="left">
+                                        <input name="ctl00$MainContent$TextBox1" type="text" value="+91" readonly="readonly" id="MainContent_TextBox1" tabindex="-1" class="form-control" style="width:60px;">
+                                        -
+            
+            <input name="ctl00$MainContent$txtMobile" type="text" maxlength="10" id="MainContent_txtMobile" class="form-control" onkeypress="return validate(event)" style="width:150px;">
+                                        <span id="MainContent_RequiredFieldValidator3" class="smallSize" typesetfocusonerror="true" style="visibility:hidden;">*</span>
+                                        <span id="MainContent_RegularExpressionValidator5" class="smallSize" style="color:Red;display:none;"><br>Mobile Number must be 10 digit</span>&nbsp;&nbsp;&nbsp;&nbsp;
+           
+                                    </td>
+                                    <td align="right" class="style4">
+                                        </td>
+                                    <td>
+                                        </td>
+                                </tr>
+                            </tbody></table>
+
+                        </div>
+                    </div>
+                
+		</div>
+                <div id="MainContent_pnlbank" style="border-style:Double;font-family:Comic Sans MS;font-size:13px;">
+			
+                    <div class="panel panel-success">
+                      
+ <div class="panel-heading" style="font-size:15px; color:red; font-weight:bold; ">बैंक विवरणी (कृषि विभाग के विभिन्न योजना में लाभ लेने के लिए आधार से लिंक बैंक खाता अनिवार्य है | योजना की राशि आधार से लिंक बैंक खाते में हीं अंतरित की जाएगी| आवेदक कृपया आधार से लिंक बैंक खाता की प्रविष्टि करें |)</div>
+                        <div class="panel-body" style="font-size: 12px;">
+                            <table width="100%">
+                                <tbody><tr>
+                                    
+
+
+                                    <td colspan="2" align="left"><font color="Red">*</font>
+                                        <span id="MainContent_lblbankname">बैंक का नाम :</span>
+                                    </td>
+                                    <td colspan="2">
+
+                                        <select name="ctl00$MainContent$ddlbankname" id="MainContent_ddlbankname" class="btn btn-default dropdown-toggle" style="width:175px;">
+				<option selected="selected" value="0">--चयन करें--</option>
+				<option value="Airtel Payment Bank">Airtel Payment Bank</option>
+				<option value="ALLAHABAD BANK">ALLAHABAD BANK</option>
+				<option value="ANDHRA BANK">ANDHRA BANK</option>
+				<option value="Aurangabad District Central Co-Operative Bank Ltd.">Aurangabad District Central Co-Operative Bank Ltd.</option>
+				<option value="AXIS BANK">AXIS BANK</option>
+				<option value="Bandhan Bank">Bandhan Bank</option>
+				<option value="BANK OF BARODA">BANK OF BARODA</option>
+				<option value="BANK OF INDIA">BANK OF INDIA</option>
+				<option value="BANK OF MAHARASHTRA">BANK OF MAHARASHTRA</option>
+				<option value="BANK OF MAHARASHTRA">BANK OF MAHARASHTRA</option>
+				<option value="Begusarai Central Co-Operative Bank Ltd.">Begusarai Central Co-Operative Bank Ltd.</option>
+				<option value="Bihar Gramin Bank">Bihar Gramin Bank</option>
+				<option value="Bihar State CO-OP Bank Ltd">Bihar State CO-OP Bank Ltd</option>
+				<option value="CANARA BANK">CANARA BANK</option>
+				<option value="CENTRAL BANK OF INDIA">CENTRAL BANK OF INDIA</option>
+				<option value="Central Co-Operative Bank Ara Ltd.">Central Co-Operative Bank Ara Ltd.</option>
+				<option value="Central Co-Operative Bank Ltd.">Central Co-Operative Bank Ltd.</option>
+				<option value="CITI BANK">CITI BANK</option>
+				<option value="CORPORATION BANK">CORPORATION BANK</option>
+				<option value="Dakshin Bihar Gramin Bank">Dakshin Bihar Gramin Bank</option>
+				<option value="DENA BANK">DENA BANK</option>
+				<option value="FEDERAL BANK">FEDERAL BANK</option>
+				<option value="Fino Payments Bank">Fino Payments Bank</option>
+				<option value="Gopalganj Central Co-Operative Bank Ltd.">Gopalganj Central Co-Operative Bank Ltd.</option>
+				<option value="HDFC BANK">HDFC BANK</option>
+				<option value="ICICI BANK LIMITED">ICICI BANK LIMITED</option>
+				<option value="IDBI BANK">IDBI BANK</option>
+				<option value="IDFC Bank">IDFC Bank</option>
+				<option value="INDIAN BANK">INDIAN BANK</option>
+				<option value="INDIAN OVERSEAS BANK">INDIAN OVERSEAS BANK</option>
+				<option value="Indian Post Payments Bank(IPPB)">Indian Post Payments Bank(IPPB)</option>
+				<option value="INDUSIND BANK">INDUSIND BANK</option>
+				<option value="JAMMU AND KASHMIR BANK LIMITED">JAMMU AND KASHMIR BANK LIMITED</option>
+				<option value="Jana Bank">Jana Bank</option>
+				<option value="Katihar District Central Co-Operative Bank Ltd">Katihar District Central Co-Operative Bank Ltd</option>
+				<option value="Khagaria District  Central Co-Operative Bank Ltd.">Khagaria District  Central Co-Operative Bank Ltd.</option>
+				<option value="KOTAK MAHINDRA BANK LIMITED">KOTAK MAHINDRA BANK LIMITED</option>
+				<option value="Madhya Bihar Gramin Bank">Madhya Bihar Gramin Bank</option>
+				<option value="Magadh Central Co-Operative Bank Ltd.">Magadh Central Co-Operative Bank Ltd.</option>
+				<option value="Monghyr-Jamui Central Co-Operative Bank Ltd">Monghyr-Jamui Central Co-Operative Bank Ltd</option>
+				<option value="Muzzafarpur Central Co-Operative Bank Ltd.">Muzzafarpur Central Co-Operative Bank Ltd.</option>
+				<option value="Nalanda Central Co-Operative Bank Ltd.">Nalanda Central Co-Operative Bank Ltd.</option>
+				<option value="National Central Co-Operative Bank Ltd.">National Central Co-Operative Bank Ltd.</option>
+				<option value="Nawada Central Co-Operative Bank Ltd.">Nawada Central Co-Operative Bank Ltd.</option>
+				<option value="ORIENTAL BANK OF COMMERCE">ORIENTAL BANK OF COMMERCE</option>
+				<option value="Patliputra Central Co-Operative Bank Ltd.">Patliputra Central Co-Operative Bank Ltd.</option>
+				<option value="Paytm Payment Bank">Paytm Payment Bank</option>
+				<option value="PUNJAB AND SIND BANK">PUNJAB AND SIND BANK</option>
+				<option value="PUNJAB NATIONAL BANK">PUNJAB NATIONAL BANK</option>
+				<option value="Purnea Central Co-Operative Bank Ltd.">Purnea Central Co-Operative Bank Ltd.</option>
+				<option value="Rohika Central Co-Operative Bank Ltd.">Rohika Central Co-Operative Bank Ltd.</option>
+				<option value="Samastipur Central Co-Operative Bank Ltd.">Samastipur Central Co-Operative Bank Ltd.</option>
+				<option value="Sasaram-Bhabhua Central Co-Operative Bank Ltd.">Sasaram-Bhabhua Central Co-Operative Bank Ltd.</option>
+				<option value="SBI">SBI</option>
+				<option value="STANDARD CHARTERED BANK">STANDARD CHARTERED BANK</option>
+				<option value="STATE BANK OF BIKANER AND JAIPUR">STATE BANK OF BIKANER AND JAIPUR</option>
+				<option value="STATE BANK OF HYDERABAD">STATE BANK OF HYDERABAD</option>
+				<option value="STATE BANK OF MYSORE">STATE BANK OF MYSORE</option>
+				<option value="STATE BANK OF PATIALA">STATE BANK OF PATIALA</option>
+				<option value="STATE BANK OF TRAVANCORE">STATE BANK OF TRAVANCORE</option>
+				<option value="SYNDICATE BANK">SYNDICATE BANK</option>
+				<option value="The Bhagalpur Central Co-Operative Bank Ltd.">The Bhagalpur Central Co-Operative Bank Ltd.</option>
+				<option value="The Motihari Central Co-Operative Bank Ltd.">The Motihari Central Co-Operative Bank Ltd.</option>
+				<option value="The Sitamarhi Central Co-Operative Bank Ltd.">The Sitamarhi Central Co-Operative Bank Ltd.</option>
+				<option value="The Siwan Central Co-Operative Bank Ltd.">The Siwan Central Co-Operative Bank Ltd.</option>
+				<option value="UCO BANK">UCO BANK</option>
+				<option value="Ujjivan Finance">Ujjivan Finance</option>
+				<option value="UNION BANK OF INDIA">UNION BANK OF INDIA</option>
+				<option value="UNITED BANK OF INDIA">UNITED BANK OF INDIA</option>
+				<option value="Utkarsh Small Finance Bank">Utkarsh Small Finance Bank</option>
+				<option value="Uttar Bihar Gramin Bank">Uttar Bihar Gramin Bank</option>
+				<option value="Vaishali District Central Co-Operative Bank Ltd">Vaishali District Central Co-Operative Bank Ltd</option>
+				<option value="VIJAYA BANK">VIJAYA BANK</option>
+				<option value="YES BANK">YES BANK</option>
+
+			</select>
+                                        <span id="MainContent_rqrfldvalbankname" style="visibility:hidden;">*</span>
+                                    </td>
+                                    <td><font color="Red">*</font>
+                                        <span id="MainContent_lblifsccode">आइ.एफ.सी कोड(11 अंको का) :</span></td>
+                                    <td>
+                                        <input name="ctl00$MainContent$txtifsccode" type="text" maxlength="11" id="MainContent_txtifsccode" class="uppercase form-control">
+                                        
+                                        <span id="MainContent_regexifsc" style="color:Red;display:none;">IFSC code is not valid</span>
+                                        <span id="MainContent_RequiredFieldValidator132" style="visibility:hidden;">*</span>
+                                </td></tr>
+
+                                <tr>
+
+                                    <td colspan="2" align="left"><font color="Red">*</font>
+                                        <span id="MainContent_lblaccount">अकाउंट नंबर :</span>
+                                    </td>
+                                    <td colspan="2">
+                                        <input name="ctl00$MainContent$txtaccount" type="text" maxlength="16" id="MainContent_txtaccount" onkeypress="return validate(event)" class="form-control" style="width:150px;">
+                                        <span id="MainContent_rqrfldvalbanknac" style="visibility:hidden;">*</span>
+                                    </td>
+                                    <td>IFSC-Code तरीका:</td>
+                                    <td>SBI-&gt;SBIN0008765</td>
+                                </tr>
+                            </tbody></table>
+                        </div>
+                    </div>
+
+                
+		</div>
+                <div id="MainContent_pnlaadhaar" style="border-style:Double;font-family:Comic Sans MS;font-size:13px;">
+			
+                    <div class="panel panel-success">
+                        <div class="panel-heading">आधार विवरणी</div>
+                        <div class="panel-body" style="font-size: 12px;">
+                            <table width="100%">
+                                <tbody><tr>
+                                    <td align="left" class="style3"><font color="Red">*</font>
+                                        आधार :
+                                    </td>
+                                    <td>
+                                        <input name="ctl00$MainContent$txtaadhaar" type="text" value="" maxlength="12" id="MainContent_txtaadhaar" enabled="enabled" class="aspNetDisabled" onkeypress="return validate(event)" style="width:150px;">
+                                        <span id="MainContent_RequiredFieldValidator4" style="color:Red;display:none;"></span>
+
+                                        <span id="MainContent_RegularExpressionValidator1" class="smallSize" style="display:none;"><br>Aadhhar Number must be 12 digit</span>
+                                        &nbsp;&nbsp;&nbsp;&nbsp; 
+                                    </td>
+
+                                    
+                                    
+                                </tr>
+                                
+                                
+                                
+                                <tr>
+                                    <td><font color="Red">*</font><b>
+                                        </b></td>
+                                    <td>
+                                        
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <center>
+                                        
+                                            </center>
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td colspan="4">
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" colspan="3">
+                                        &nbsp;&nbsp;
+                                &nbsp;&nbsp;
+                            &nbsp;
+                                        &nbsp; &nbsp;
+                                        
+                                        <input type="submit" name="ctl00$MainContent$Button2" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$Button2&quot;, &quot;&quot;, true, &quot;R&quot;, &quot;&quot;, false, false))" id="MainContent_Button2" title="Click to generate OTP &amp; after that change the Captcha text" class="btn btn-success" style="font-family:Algerian;font-weight:bold;">
+                                        
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td colspan="4" align="left">
+                                        <i style="font-family: Verdana; font-weight: bold">Note :-</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">1)एक आधार,एक मोबाइल एवं एक बैंक एकाउंट से एक ही रजिस्ट्रेशन संभव हो सकता है, कृपया आधार,मोबाइल एवं बैंक एकाउंट का पुनरावृति ना करें |</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">2) रजिस्ट्रेशन के पूर्व सभी आंकड़ो, आधार नंबर,मोबाइल नंबर एवं बैंक विवरणी को सही से जाँच ले</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">3) सबमिट(submit)बटन के क्लिक पर आपके रजिस्टर्ड मोबाइल नंबर पर एक वन टाइम पासवर्ड(OTP) मिलेगा.</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">4) कृपया इस वन टाइम पासवर्ड(OTP)को लिखे गये बॉक्स में लिखे एवं वेलीडेट होने का इंतजार करे.</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">5) अंत में रजिस्टर्ड बटन पर क्लिक करें,आपके रजिस्टर्ड मोबाइल नंबर पर मेसेज आएगा,इसे सुरक्षित रखे</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">6) कृपया सुनिश्चित करें कि सभी डेटा सही और प्रामाणिक हैं</i><br>
+                                        <i style="font-family: Verdana; font-weight: bold">7) <font color="Red">*</font>मार्क वाले फील्ड   अनिवार्य हैं</i>
+                                        <div id="MainContent_ValidationSummary1" style="color:Maroon;font-weight:bold;display:none;">
+
+			</div>
+                                    </td>
+                                </tr>
+
+                            </tbody></table>
+                        </div>
+                    </div>
+                
+		</div>
+            
+	</div>
+        
+</div>
+    <br>
+
+
+            <input type="submit" name="ctl00$MainContent$btnShowPopup" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnShowPopup&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnShowPopup" style="display: none">
+            
+            <div id="MainContent_pnlpopup" style="background-color: white; font-size: 14px; height: 190px; width: 800px; display: none; position: fixed; z-index: 100001;">
+	
+                <div class="panel panel-success">
+                        <div class="panel-heading">USER</div>
+                        <div class="panel-body" style="font-size: 12px;">
+                <table class="table table-bordered"> 
+                    
+                        <tbody><tr>
+                            <td>
+                                <input type="image" name="ctl00$MainContent$LNLcsc" id="MainContent_LNLcsc" src="./kisan registion setep_files/CSC-Services.png" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$LNLcsc&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:50px;width:200px;">
+                            </td>
+                              <td>
+                                <input type="image" name="ctl00$MainContent$ImageButton1" id="MainContent_ImageButton1" src="./kisan registion setep_files/sahaj.jpg" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$ImageButton1&quot;, &quot;&quot;, true, &quot;&quot;, &quot;https://retail.sahaj.co.in/web/guest/home&quot;, false, false))" style="height:50px;width:200px;">
+                            </td>
+                              <td>
+                                <input type="image" name="ctl00$MainContent$ctl01" iid="btnAbc" src="./kisan registion setep_files/Guser.jpg" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$ctl01&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" style="height:50px;width:200px;">
+                            </td>
+                        </tr>
+                    <tr>
+                        <td colspan="3" align="center"> 
+
+                            <input type="submit" name="ctl00$MainContent$btnCloseee" value="Close" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnCloseee&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnCloseee" class="btn btn-danger">
+                        </td>
+                    </tr>
+                </tbody></table>
+                            </div> </div> 
+            
+</div>
+
+   
+
+
+
+
+
+    <input type="submit" name="ctl00$MainContent$btnShowPopupKCC" value="" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnShowPopupKCC&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnShowPopupKCC" style="display: none">
+    
+    <div id="MainContent_pnlPopupKCC" style="background-color: white; font-size: 14px; height: 190px; width: 800px; display: none; position: fixed; z-index: 100001;">
+	
+
+        <div class="panel panel-success">
+            <div class="panel-heading">किसान क्रेडिट कार्ड विवरण</div>
+            <div class="panel-body" style="font-size: 12px;">
+                <table class="table table-bordered">
+
+                    <tbody><tr>
+                        <td>
+                            <ul>
+                                <li>क्या आपने किसान क्रेडिट कार्ड लिया हैं ?&nbsp;&nbsp;&nbsp;
+                                    <input id="MainContent_chkCreditYes" type="checkbox" name="ctl00$MainContent$chkCreditYes" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkCreditYes\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="MainContent_chkCreditYes">हाँ</label>
+                                    &nbsp;&nbsp;&nbsp; 
+                                    <input id="MainContent_chkCreditNo" type="checkbox" name="ctl00$MainContent$chkCreditNo" checked="checked" onclick="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$MainContent$chkCreditNo\&#39;,\&#39;\&#39;)&#39;, 0)"><label for="MainContent_chkCreditNo">नहीं</label>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td style="color: red; font-weight: bold;">** Please enter correct account number. if you entered incorrect/Wrong account number. Your regsitration will be blocked. </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <input type="submit" name="ctl00$MainContent$btnSubmitKCC" value="Submit" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$MainContent$btnSubmitKCC&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="MainContent_btnSubmitKCC" class="btn btn-info">
+                        
+                        </td>
+                    </tr>
+                </tbody></table>
+            </div>
+        </div>
+    
+</div>
+
+
+
+
+
+                    <div id="MainContent_ModalPopupExtender1_backgroundElement" class="modalBackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div><div id="MainContent_ModalPopupExtender2_backgroundElement" class="modalBackground" style="display: none; position: fixed; left: 0px; top: 0px; z-index: 10000;"></div></div>
+                </td>
+            </tr>
+          
+        </tbody></table>
+        <div class="clear">
+        </div>
+         <div align="center"> </div>
+        <div class="footer">
+           Copyright © 2018 Agriculture Department, All rights reserved..<br>
+              किसी भी तकनीकी समस्या के लिये <b><a href="mailto:dbtcellagri@gmail.com">dbtcellagri@gmail.com</a> </b> &nbsp;मेल का उपयोग करें |
+
+</div>
+    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("MainContent_ValidationSummary1"));
+var Page_Validators =  new Array(document.getElementById("MainContent_RequiredFieldValidator4"), document.getElementById("MainContent_RequiredFieldValidator5"), document.getElementById("MainContent_regexpName"), document.getElementById("MainContent_RangeValidator2"), document.getElementById("MainContent_RequiredFieldValidator14"), document.getElementById("MainContent_RequiredFieldValidator13"), document.getElementById("MainContent_RequiredFieldValidator8"), document.getElementById("MainContent_RequiredFieldValidator9"), document.getElementById("MainContent_RequiredFieldValidator10"), document.getElementById("MainContent_RequiredFieldValidator6"), document.getElementById("MainContent_RequiredFieldValidator7"), document.getElementById("MainContent_RequiredFieldValidator12"), document.getElementById("MainContent_RequiredFieldValidator3"), document.getElementById("MainContent_RegularExpressionValidator5"), document.getElementById("MainContent_rqrfldvalbankname"), document.getElementById("MainContent_regexifsc"), document.getElementById("MainContent_RequiredFieldValidator132"), document.getElementById("MainContent_rqrfldvalbanknac"), document.getElementById("MainContent_RequiredFieldValidator2"), document.getElementById("MainContent_RegularExpressionValidator1"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var MainContent_RequiredFieldValidator4 = document.all ? document.all["MainContent_RequiredFieldValidator4"] : document.getElementById("MainContent_RequiredFieldValidator4");
+MainContent_RequiredFieldValidator4.controltovalidate = "MainContent_txtfirstName";
+MainContent_RequiredFieldValidator4.focusOnError = "t";
+MainContent_RequiredFieldValidator4.errormessage = "Enter Name";
+MainContent_RequiredFieldValidator4.display = "None";
+MainContent_RequiredFieldValidator4.validationGroup = "R";
+MainContent_RequiredFieldValidator4.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator4.initialvalue = "";
+var MainContent_RequiredFieldValidator5 = document.all ? document.all["MainContent_RequiredFieldValidator5"] : document.getElementById("MainContent_RequiredFieldValidator5");
+MainContent_RequiredFieldValidator5.controltovalidate = "MainContent_txtFatherName";
+MainContent_RequiredFieldValidator5.focusOnError = "t";
+MainContent_RequiredFieldValidator5.errormessage = "Enter Father/Mothe/Husband Name";
+MainContent_RequiredFieldValidator5.display = "None";
+MainContent_RequiredFieldValidator5.validationGroup = "R";
+MainContent_RequiredFieldValidator5.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator5.initialvalue = "";
+var MainContent_regexpName = document.all ? document.all["MainContent_regexpName"] : document.getElementById("MainContent_regexpName");
+MainContent_regexpName.controltovalidate = "MainContent_txtDOB";
+MainContent_regexpName.focusOnError = "t";
+MainContent_regexpName.errormessage = "This date of birth is not validate.";
+MainContent_regexpName.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_regexpName.validationexpression = "^(0[1-9]|[12][0-9]|3[01])[- /.](0[1-9]|1[012])[- /.](19|20)\\d\\d$";
+var MainContent_RangeValidator2 = document.all ? document.all["MainContent_RangeValidator2"] : document.getElementById("MainContent_RangeValidator2");
+MainContent_RangeValidator2.controltovalidate = "MainContent_txtDOB";
+MainContent_RangeValidator2.focusOnError = "t";
+MainContent_RangeValidator2.errormessage = "Invalid DOB. It must be between 01-Jan-950 to 31-Dec-2002.";
+MainContent_RangeValidator2.evaluationfunction = "RangeValidatorEvaluateIsValid";
+MainContent_RangeValidator2.maximumvalue = "31-Dec-2002";
+MainContent_RangeValidator2.minimumvalue = "01-Jan-1930";
+var MainContent_RequiredFieldValidator14 = document.all ? document.all["MainContent_RequiredFieldValidator14"] : document.getElementById("MainContent_RequiredFieldValidator14");
+MainContent_RequiredFieldValidator14.controltovalidate = "MainContent_txtDOB";
+MainContent_RequiredFieldValidator14.focusOnError = "t";
+MainContent_RequiredFieldValidator14.errormessage = "Enter DOB";
+MainContent_RequiredFieldValidator14.display = "None";
+MainContent_RequiredFieldValidator14.validationGroup = "R";
+MainContent_RequiredFieldValidator14.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator14.initialvalue = "";
+var MainContent_RequiredFieldValidator13 = document.all ? document.all["MainContent_RequiredFieldValidator13"] : document.getElementById("MainContent_RequiredFieldValidator13");
+MainContent_RequiredFieldValidator13.controltovalidate = "MainContent_ddlGender";
+MainContent_RequiredFieldValidator13.focusOnError = "t";
+MainContent_RequiredFieldValidator13.errormessage = "Select your Gender";
+MainContent_RequiredFieldValidator13.validationGroup = "R";
+MainContent_RequiredFieldValidator13.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator13.initialvalue = "0";
+var MainContent_RequiredFieldValidator8 = document.all ? document.all["MainContent_RequiredFieldValidator8"] : document.getElementById("MainContent_RequiredFieldValidator8");
+MainContent_RequiredFieldValidator8.controltovalidate = "MainContent_ddlcast";
+MainContent_RequiredFieldValidator8.focusOnError = "t";
+MainContent_RequiredFieldValidator8.errormessage = "Select your cast category";
+MainContent_RequiredFieldValidator8.validationGroup = "R";
+MainContent_RequiredFieldValidator8.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator8.initialvalue = "0";
+var MainContent_RequiredFieldValidator9 = document.all ? document.all["MainContent_RequiredFieldValidator9"] : document.getElementById("MainContent_RequiredFieldValidator9");
+MainContent_RequiredFieldValidator9.controltovalidate = "MainContent_ddlfarmertype";
+MainContent_RequiredFieldValidator9.focusOnError = "t";
+MainContent_RequiredFieldValidator9.errormessage = "Select your farmer";
+MainContent_RequiredFieldValidator9.validationGroup = "R";
+MainContent_RequiredFieldValidator9.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator9.initialvalue = "0";
+var MainContent_RequiredFieldValidator10 = document.all ? document.all["MainContent_RequiredFieldValidator10"] : document.getElementById("MainContent_RequiredFieldValidator10");
+MainContent_RequiredFieldValidator10.controltovalidate = "MainContent_ddldistric";
+MainContent_RequiredFieldValidator10.focusOnError = "t";
+MainContent_RequiredFieldValidator10.errormessage = "Select your District";
+MainContent_RequiredFieldValidator10.validationGroup = "R";
+MainContent_RequiredFieldValidator10.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator10.initialvalue = "0";
+var MainContent_RequiredFieldValidator6 = document.all ? document.all["MainContent_RequiredFieldValidator6"] : document.getElementById("MainContent_RequiredFieldValidator6");
+MainContent_RequiredFieldValidator6.controltovalidate = "MainContent_ddlblock";
+MainContent_RequiredFieldValidator6.errormessage = "Select your Block";
+MainContent_RequiredFieldValidator6.validationGroup = "R";
+MainContent_RequiredFieldValidator6.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator6.initialvalue = "0";
+var MainContent_RequiredFieldValidator7 = document.all ? document.all["MainContent_RequiredFieldValidator7"] : document.getElementById("MainContent_RequiredFieldValidator7");
+MainContent_RequiredFieldValidator7.controltovalidate = "MainContent_ddlpanchayat";
+MainContent_RequiredFieldValidator7.errormessage = "Select your Panchayat";
+MainContent_RequiredFieldValidator7.validationGroup = "R";
+MainContent_RequiredFieldValidator7.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator7.initialvalue = "0";
+var MainContent_RequiredFieldValidator12 = document.all ? document.all["MainContent_RequiredFieldValidator12"] : document.getElementById("MainContent_RequiredFieldValidator12");
+MainContent_RequiredFieldValidator12.controltovalidate = "MainContent_ddlvill";
+MainContent_RequiredFieldValidator12.errormessage = "Select your Village";
+MainContent_RequiredFieldValidator12.validationGroup = "R";
+MainContent_RequiredFieldValidator12.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator12.initialvalue = "0";
+var MainContent_RequiredFieldValidator3 = document.all ? document.all["MainContent_RequiredFieldValidator3"] : document.getElementById("MainContent_RequiredFieldValidator3");
+MainContent_RequiredFieldValidator3.controltovalidate = "MainContent_txtMobile";
+MainContent_RequiredFieldValidator3.errormessage = "Enter Mobile Number";
+MainContent_RequiredFieldValidator3.validationGroup = "R";
+MainContent_RequiredFieldValidator3.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator3.initialvalue = "";
+var MainContent_RegularExpressionValidator5 = document.all ? document.all["MainContent_RegularExpressionValidator5"] : document.getElementById("MainContent_RegularExpressionValidator5");
+MainContent_RegularExpressionValidator5.controltovalidate = "MainContent_txtMobile";
+MainContent_RegularExpressionValidator5.errormessage = "<br>Mobile Number must be 10 digit";
+MainContent_RegularExpressionValidator5.display = "Dynamic";
+MainContent_RegularExpressionValidator5.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator5.validationexpression = "^[0-9]{10}$";
+var MainContent_rqrfldvalbankname = document.all ? document.all["MainContent_rqrfldvalbankname"] : document.getElementById("MainContent_rqrfldvalbankname");
+MainContent_rqrfldvalbankname.controltovalidate = "MainContent_ddlbankname";
+MainContent_rqrfldvalbankname.errormessage = "Select your Bank";
+MainContent_rqrfldvalbankname.validationGroup = "R";
+MainContent_rqrfldvalbankname.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_rqrfldvalbankname.initialvalue = "0";
+var MainContent_regexifsc = document.all ? document.all["MainContent_regexifsc"] : document.getElementById("MainContent_regexifsc");
+MainContent_regexifsc.controltovalidate = "MainContent_txtifsccode";
+MainContent_regexifsc.focusOnError = "t";
+MainContent_regexifsc.errormessage = "IFSC code is not valid";
+MainContent_regexifsc.display = "Dynamic";
+MainContent_regexifsc.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_regexifsc.validationexpression = "^[A-Za-z]{4}[a-zA-Z0-9]{7}$";
+var MainContent_RequiredFieldValidator132 = document.all ? document.all["MainContent_RequiredFieldValidator132"] : document.getElementById("MainContent_RequiredFieldValidator132");
+MainContent_RequiredFieldValidator132.controltovalidate = "MainContent_txtifsccode";
+MainContent_RequiredFieldValidator132.errormessage = "Enter your IFSC Code";
+MainContent_RequiredFieldValidator132.validationGroup = "R";
+MainContent_RequiredFieldValidator132.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator132.initialvalue = "";
+var MainContent_rqrfldvalbanknac = document.all ? document.all["MainContent_rqrfldvalbanknac"] : document.getElementById("MainContent_rqrfldvalbanknac");
+MainContent_rqrfldvalbanknac.controltovalidate = "MainContent_txtaccount";
+MainContent_rqrfldvalbanknac.errormessage = "Enter your Account Number";
+MainContent_rqrfldvalbanknac.validationGroup = "R";
+MainContent_rqrfldvalbanknac.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_rqrfldvalbanknac.initialvalue = "";
+var MainContent_RequiredFieldValidator2 = document.all ? document.all["MainContent_RequiredFieldValidator2"] : document.getElementById("MainContent_RequiredFieldValidator2");
+MainContent_RequiredFieldValidator2.controltovalidate = "MainContent_txtaadhaar";
+MainContent_RequiredFieldValidator2.errormessage = "Enter Correct Aadhhar Number";
+MainContent_RequiredFieldValidator2.display = "Dynamic";
+MainContent_RequiredFieldValidator2.validationGroup = "R";
+MainContent_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+MainContent_RequiredFieldValidator2.initialvalue = "";
+var MainContent_RegularExpressionValidator1 = document.all ? document.all["MainContent_RegularExpressionValidator1"] : document.getElementById("MainContent_RegularExpressionValidator1");
+MainContent_RegularExpressionValidator1.controltovalidate = "MainContent_txtaadhaar";
+MainContent_RegularExpressionValidator1.focusOnError = "t";
+MainContent_RegularExpressionValidator1.errormessage = "<br>Aadhhar Number must be 12 digit";
+MainContent_RegularExpressionValidator1.display = "Dynamic";
+MainContent_RegularExpressionValidator1.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+MainContent_RegularExpressionValidator1.validationexpression = "^[0-9]{12}$";
+var MainContent_ValidationSummary1 = document.all ? document.all["MainContent_ValidationSummary1"] : document.getElementById("MainContent_ValidationSummary1");
+MainContent_ValidationSummary1.showmessagebox = "True";
+MainContent_ValidationSummary1.showsummary = "False";
+MainContent_ValidationSummary1.validationGroup = "R";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        
+(function(id) {
+    var e = document.getElementById(id);
+    if (e) {
+        e.dispose = function() {
+            Array.remove(Page_ValidationSummaries, document.getElementById(id));
+        }
+        e = null;
+    }
+})('MainContent_ValidationSummary1');
+
+document.getElementById('MainContent_RequiredFieldValidator4').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator4'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator5').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator5'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.TextBoxWatermarkBehavior, {"ClientStateFieldID":"MainContent_TextBoxWatermarkExtender1_ClientState","WatermarkText":"DD-MM-YYYY","id":"MainContent_TextBoxWatermarkExtender1"}, null, null, $get("MainContent_txtDOB"));
+});
+
+document.getElementById('MainContent_regexpName').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_regexpName'));
+}
+
+document.getElementById('MainContent_RangeValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RangeValidator2'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.CalendarBehavior, {"button":$get("MainContent_imgcal"),"format":"dd-MMM-yyyy","id":"MainContent_CalendarExtender1","popupPosition":3}, {"dateSelectionChanged":checkdate}, null, $get("MainContent_txtDOB"));
+});
+
+document.getElementById('MainContent_RequiredFieldValidator14').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator14'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator13').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator13'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator8').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator8'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator9').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator9'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator10').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator10'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator6').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator6'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator7').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator7'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator12').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator12'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator3').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator3'));
+}
+
+document.getElementById('MainContent_RegularExpressionValidator5').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RegularExpressionValidator5'));
+}
+
+document.getElementById('MainContent_rqrfldvalbankname').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_rqrfldvalbankname'));
+}
+
+document.getElementById('MainContent_regexifsc').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_regexifsc'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator132').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator132'));
+}
+
+document.getElementById('MainContent_rqrfldvalbanknac').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_rqrfldvalbanknac'));
+}
+
+document.getElementById('MainContent_RequiredFieldValidator2').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RequiredFieldValidator2'));
+}
+
+document.getElementById('MainContent_RegularExpressionValidator1').dispose = function() {
+    Array.remove(Page_Validators, document.getElementById('MainContent_RegularExpressionValidator1'));
+}
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","CancelControlID":"MainContent_btnCloseee","PopupControlID":"MainContent_pnlpopup","dynamicServicePath":"/RegFarmer/NewRegistrationPage.aspx","id":"MainContent_ModalPopupExtender1"}, null, null, $get("MainContent_btnShowPopup"));
+});
+Sys.Application.add_init(function() {
+    $create(Sys.Extended.UI.ModalPopupBehavior, {"BackgroundCssClass":"modalBackground","PopupControlID":"MainContent_pnlPopupKCC","dynamicServicePath":"/RegFarmer/NewRegistrationPage.aspx","id":"MainContent_ModalPopupExtender2"}, null, null, $get("MainContent_btnShowPopupKCC"));
+});
+//]]>
+</script>
+</form>
+
+
+</body></html>
